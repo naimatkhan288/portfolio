@@ -12,17 +12,25 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Certification badge styling (UPDATED: bigger + cleaner) -->
+		<!-- Certification badge styling (FIXED & READABLE) -->
 		<style>
-			.badge-row img {
+			.badge-row .badge-tile {
+				display: flex;
+				align-items: center;
+				justify-content: center;
 				background: rgba(255,255,255,0.06);
-				padding: 14px;
 				border-radius: 14px;
-				max-width: 160px;   /* makes badges bigger */
-				margin: 0 auto;
+				height: 180px;
+				padding: 20px;
 			}
-			.badge-row a:hover img {
-				transform: scale(1.08);
+
+			.badge-row img {
+				max-height: 120px;
+				width: auto;
+			}
+
+			.badge-row a:hover .badge-tile {
+				transform: scale(1.06);
 				transition: transform 0.2s ease-in-out;
 			}
 		</style>
@@ -44,7 +52,6 @@
 								<ul>
 									<li><a href="index.html#banner">Home</a></li>
 									<li><a href="index.html#one">About</a></li>
-									<li><a href="index.html#two">Highlights</a></li>
 									<li><a href="generic.html">Case Studies</a></li>
 									<li><a href="elements.html">Skills</a></li>
 									<li><a href="index.html#cta">Contact</a></li>
@@ -59,7 +66,7 @@
 			<!-- Main -->
 			<article id="main">
 				<header>
-					<h2>Skills & Tools</h2>
+					<h2>Skills & Certifications</h2>
 					<p>Cloud platforms, migration frameworks, DevOps automation, security governance, and FinOps optimization.</p>
 				</header>
 
@@ -74,7 +81,7 @@
 								<div class="col-4 col-12-medium">
 									<h4><span class="icon solid fa-cloud"></span> Cloud Architecture</h4>
 									<ul>
-										<li>Multi-account, multi-AZ designs</li>
+										<li>Multi-account & multi-AZ designs</li>
 										<li>Landing Zones & governance</li>
 										<li>Well-Architected Reviews</li>
 									</ul>
@@ -122,7 +129,7 @@
 								<div class="col-4 col-12-medium">
 									<h4><span class="icon solid fa-coins"></span> FinOps</h4>
 									<ul>
-										<li>RI/SP strategy</li>
+										<li>RI / SP strategy</li>
 										<li>20–60% cost optimization</li>
 									</ul>
 								</div>
@@ -135,47 +142,48 @@
 						<section>
 							<h3>Certifications</h3>
 
-							<!-- Clickable Badge Images -->
 							<div class="box alt">
 								<div class="row gtr-50 gtr-uniform badge-row">
 
 									<div class="col-3 col-6-small">
-										<a href="https://www.credly.com/badges/8ccc30d3-3a30-419e-b743-23e6348e0c0a?source=linked_in_profile" target="_blank" rel="noopener">
-											<span class="image fit">
-												<img src="images/badges/aws-sysops.png" alt="AWS Certified SysOps Administrator – Associate" />
-											</span>
+										<a href="https://www.credly.com/badges/8ccc30d3-3a30-419e-b743-23e6348e0c0a" target="_blank" rel="noopener">
+											<div class="badge-tile">
+												<img src="images/badges/aws-sysops.png"
+												     alt="AWS Certified SysOps Administrator – Associate" />
+											</div>
 										</a>
 									</div>
 
 									<div class="col-3 col-6-small">
-										<a href="https://www.credly.com/badges/353669d0-cbbf-4cb2-b6ce-2f809118bc20?source=linked_in_profile" target="_blank" rel="noopener">
-											<span class="image fit">
-												<img src="images/badges/aws-saa.png" alt="AWS Certified Solutions Architect – Associate" />
-											</span>
+										<a href="https://www.credly.com/badges/353669d0-cbbf-4cb2-b6ce-2f809118bc20" target="_blank" rel="noopener">
+											<div class="badge-tile">
+												<img src="images/badges/aws-saa.png"
+												     alt="AWS Certified Solutions Architect – Associate" />
+											</div>
 										</a>
 									</div>
 
 									<div class="col-3 col-6-small">
 										<a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=5DB224CEA9EEE540002A26B4858D7BA05AD27C3FBAC77A6BB942EF528E4845FF" target="_blank" rel="noopener">
-											<span class="image fit">
-												<img src="images/badges/oci-architect-associate.png" alt="Oracle Cloud Infrastructure 2023 Certified Architect Associate" />
-											</span>
+											<div class="badge-tile">
+												<img src="images/badges/oci-architect-associate.png"
+												     alt="Oracle Cloud Infrastructure 2023 Certified Architect Associate" />
+											</div>
 										</a>
 									</div>
 
 									<div class="col-3 col-6-small">
-										<!-- FIX: your link was to the edit page; use your public profile or a badge URL -->
-										<a href="https://www.credly.com/users/naimat-ullah-khan" target="_blank" rel="noopener">
-											<span class="image fit">
-												<img src="images/badges/ccna.png" alt="Cisco Certified Network Associate (CCNA)" />
-											</span>
+										<a href="https://www.credly.com" target="_blank" rel="noopener">
+											<div class="badge-tile">
+												<img src="images/badges/ccna.png"
+												     alt="Cisco Certified Network Associate (CCNA)" />
+											</div>
 										</a>
 									</div>
 
 								</div>
 							</div>
 
-							<!-- Text List -->
 							<ul>
 								<li>AWS Certified SysOps Administrator – Associate</li>
 								<li>AWS Certified Solutions Architect – Associate</li>
@@ -186,7 +194,7 @@
 							</ul>
 
 							<ul class="actions">
-								<li><a href="assets/docs/Naimat-Ullah-Khan-Resume.pdf" class="button primary" target="_blank" rel="noopener">Download CV</a></li>
+								<li><a href="assets/docs/Naimat-Ullah-Khan-Resume.pdf" class="button primary" target="_blank">Download CV</a></li>
 								<li><a href="index.html#cta" class="button">Contact</a></li>
 							</ul>
 						</section>
@@ -198,10 +206,10 @@
 			<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/naimatullahkhan/" class="icon brands fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/naimatkhan288" class="icon brands fa-github" target="_blank" rel="noopener"><span class="label">GitHub</span></a></li>
-					<li><a href="https://gitlab.com/Naimat-Khan" class="icon brands fa-gitlab" target="_blank" rel="noopener"><span class="label">GitLab</span></a></li>
-					<li><a href="mailto:naimatkhan288@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://www.linkedin.com/in/naimatullahkhan/" class="icon brands fa-linkedin" target="_blank"></a></li>
+					<li><a href="https://github.com/naimatkhan288" class="icon brands fa-github" target="_blank"></a></li>
+					<li><a href="https://gitlab.com/Naimat-Khan" class="icon brands fa-gitlab" target="_blank"></a></li>
+					<li><a href="mailto:naimatkhan288@gmail.com" class="icon solid fa-envelope"></a></li>
 				</ul>
 				<ul class="copyright">
 					<li>&copy; Naimat Ullah Khan</li>
