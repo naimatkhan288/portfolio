@@ -2,7 +2,6 @@
 <!--
 	Spectral by HTML5 UP
 	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
@@ -12,7 +11,17 @@
 		<meta name="description" content="Cloud, DevOps, Security, Migration and FinOps skills by Naimat Ullah Khan." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Certification badge styling -->
+		<style>
+			.badge-row img {
+				background: rgba(255,255,255,0.06);
+				padding: 12px;
+				border-radius: 14px;
+			}
+		</style>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Page Wrapper -->
@@ -33,7 +42,7 @@
 									<li><a href="generic.html">Case Studies</a></li>
 									<li><a href="elements.html">Skills</a></li>
 									<li><a href="index.html#cta">Contact</a></li>
-									<li><a href="assets/docs/Naimat-Ullah-Khan-Resume.pdf" target="_blank" rel="noopener">Download CV</a></li>
+									<li><a href="assets/docs/Naimat-Ullah-Khan-Resume.pdf" target="_blank">Download CV</a></li>
 								</ul>
 							</div>
 						</li>
@@ -51,31 +60,35 @@
 				<section class="wrapper style5">
 					<div class="inner">
 
+						<!-- Core Skills -->
 						<section>
 							<h3>Core Strengths</h3>
+
 							<div class="row">
 								<div class="col-4 col-12-medium">
 									<h4><span class="icon solid fa-cloud"></span> Cloud Architecture</h4>
 									<ul>
 										<li>Multi-account, multi-AZ designs</li>
-										<li>Landing Zones + governance</li>
-										<li>Well-Architected aligned reviews</li>
+										<li>Landing Zones & governance</li>
+										<li>Well-Architected Reviews</li>
 									</ul>
 								</div>
+
 								<div class="col-4 col-12-medium">
 									<h4><span class="icon solid fa-project-diagram"></span> Migration & Modernization</h4>
 									<ul>
-										<li>AWS MAP 2.0, OLA, TCO modeling</li>
-										<li>VMware / Hyper-V migration patterns</li>
-										<li>MGN + DMS execution planning</li>
+										<li>AWS MAP 2.0, OLA, TCO</li>
+										<li>VMware / Hyper-V migrations</li>
+										<li>MGN & DMS execution</li>
 									</ul>
 								</div>
+
 								<div class="col-4 col-12-medium">
 									<h4><span class="icon solid fa-shield-alt"></span> Security & Governance</h4>
 									<ul>
 										<li>IAM, SCPs, least privilege</li>
-										<li>WAF/Shield, GuardDuty, CloudTrail</li>
-										<li>CIS benchmarks, PCI / ISO readiness</li>
+										<li>WAF, GuardDuty, CloudTrail</li>
+										<li>Compliance readiness</li>
 									</ul>
 								</div>
 							</div>
@@ -87,24 +100,24 @@
 									<h4><span class="icon solid fa-code"></span> DevOps & IaC</h4>
 									<ul>
 										<li>Terraform, CloudFormation</li>
-										<li>GitHub / GitLab CI/CD, CodePipeline</li>
-										<li>Docker, Kubernetes, ECS, EKS</li>
+										<li>GitHub, GitLab, CodePipeline</li>
+										<li>Docker, ECS, EKS</li>
 									</ul>
 								</div>
+
 								<div class="col-4 col-12-medium">
-									<h4><span class="icon solid fa-chart-line"></span> Monitoring & Operations</h4>
+									<h4><span class="icon solid fa-chart-line"></span> Monitoring</h4>
 									<ul>
-										<li>CloudWatch, ELK, Prometheus, Grafana</li>
-										<li>Operational reviews, incident readiness</li>
-										<li>Logging, metrics, alerting practices</li>
+										<li>CloudWatch, ELK, Grafana</li>
+										<li>Operational readiness</li>
 									</ul>
 								</div>
+
 								<div class="col-4 col-12-medium">
 									<h4><span class="icon solid fa-coins"></span> FinOps</h4>
 									<ul>
-										<li>RI/SP strategy and adoption</li>
-										<li>Rightsizing + storage optimization</li>
-										<li>20–60% cost optimization outcomes</li>
+										<li>RI/SP strategy</li>
+										<li>20–60% cost optimization</li>
 									</ul>
 								</div>
 							</div>
@@ -112,41 +125,42 @@
 
 						<hr />
 
-						<section>
-							<h3>Platforms & Services</h3>
-							<div class="row">
-								<div class="col-6 col-12-medium">
-									<h4>AWS</h4>
-									<ul class="alt">
-										<li>EC2, VPC, ALB/ELB, Auto Scaling</li>
-										<li>S3, CloudFront, Route 53</li>
-										<li>RDS, DynamoDB</li>
-										<li>Lambda, API Gateway</li>
-										<li>ECS, EKS</li>
-										<li>WAF, IAM, CloudTrail, CloudWatch</li>
-										<li>Amazon Bedrock</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-medium">
-									<h4>Azure & OCI</h4>
-									<ul class="alt">
-										<li>Azure: Compute, Networking, IAM</li>
-										<li>OCI: Core services + architecture</li>
-										<li>Hybrid cloud design patterns</li>
-									</ul>
-
-									<h4>Programming</h4>
-									<ul class="alt">
-										<li>Python, Bash, PowerShell</li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<hr />
-
+						<!-- Certifications -->
 						<section>
 							<h3>Certifications</h3>
+
+							<!-- Badge Images -->
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform badge-row">
+
+									<div class="col-3 col-6-small">
+										<span class="image fit">
+											<img src="images/badges/aws-sysops.png" alt="AWS Certified SysOps Administrator – Associate" />
+										</span>
+									</div>
+
+									<div class="col-3 col-6-small">
+										<span class="image fit">
+											<img src="images/badges/aws-saa.png" alt="AWS Certified Solutions Architect – Associate" />
+										</span>
+									</div>
+
+									<div class="col-3 col-6-small">
+										<span class="image fit">
+											<img src="images/badges/oci-architect-associate.png" alt="OCI 2023 Certified Architect Associate" />
+										</span>
+									</div>
+
+									<div class="col-3 col-6-small">
+										<span class="image fit">
+											<img src="images/badges/ccna.png" alt="Cisco Certified Network Associate (CCNA)" />
+										</span>
+									</div>
+
+								</div>
+							</div>
+
+							<!-- Text List -->
 							<ul>
 								<li>AWS Certified SysOps Administrator – Associate</li>
 								<li>AWS Certified Solutions Architect – Associate</li>
@@ -157,7 +171,7 @@
 							</ul>
 
 							<ul class="actions">
-								<li><a href="assets/docs/Naimat-Ullah-Khan-Resume.pdf" class="button primary" target="_blank" rel="noopener">Download CV</a></li>
+								<li><a href="assets/docs/Naimat-Ullah-Khan-Resume.pdf" class="button primary" target="_blank">Download CV</a></li>
 								<li><a href="index.html#cta" class="button">Contact</a></li>
 							</ul>
 						</section>
@@ -169,207 +183,14 @@
 			<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/naimatullahkhan/" class="icon brands fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/naimatkhan288" class="icon brands fa-github" target="_blank" rel="noopener"><span class="label">GitHub</span></a></li>
-					<li><a href="https://gitlab.com/Naimat-Khan" class="icon brands fa-gitlab" target="_blank" rel="noopener"><span class="label">GitLab</span></a></li>
-					<li><a href="mailto:naimatkhan288@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://www.linkedin.com/in/naimatullahkhan/" class="icon brands fa-linkedin" target="_blank"></a></li>
+					<li><a href="https://github.com/naimatkhan288" class="icon brands fa-github" target="_blank"></a></li>
+					<li><a href="https://gitlab.com/Naimat-Khan" class="icon brands fa-gitlab" target="_blank"></a></li>
+					<li><a href="mailto:naimatkhan288@gmail.com" class="icon solid fa-envelope"></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Naimat Ullah Khan</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
-
-		</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
-<!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Skills | Naimat Ullah Khan</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Cloud, DevOps, Security, Migration and FinOps skills by Naimat Ullah Khan." />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Page Wrapper -->
-		<div id="page-wrapper">
-
-			<!-- Header -->
-			<header id="header">
-				<h1><a href="index.html">Naimat Ullah Khan</a></h1>
-				<nav id="nav">
-					<ul>
-						<li class="special">
-							<a href="#menu" class="menuToggle"><span>Menu</span></a>
-							<div id="menu">
-								<ul>
-									<li><a href="index.html#banner">Home</a></li>
-									<li><a href="index.html#one">About</a></li>
-									<li><a href="index.html#two">Highlights</a></li>
-									<li><a href="generic.html">Case Studies</a></li>
-									<li><a href="elements.html">Skills</a></li>
-									<li><a href="index.html#cta">Contact</a></li>
-									<li><a href="assets/docs/Naimat-Ullah-Khan-Resume.pdf" target="_blank" rel="noopener">Download CV</a></li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</nav>
-			</header>
-
-			<!-- Main -->
-			<article id="main">
-				<header>
-					<h2>Skills & Tools</h2>
-					<p>Cloud platforms, migration frameworks, DevOps automation, security governance, and FinOps optimization.</p>
-				</header>
-
-				<section class="wrapper style5">
-					<div class="inner">
-
-						<section>
-							<h3>Core Strengths</h3>
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<h4><span class="icon solid fa-cloud"></span> Cloud Architecture</h4>
-									<ul>
-										<li>Multi-account, multi-AZ designs</li>
-										<li>Landing Zones + governance</li>
-										<li>Well-Architected aligned reviews</li>
-									</ul>
-								</div>
-								<div class="col-4 col-12-medium">
-									<h4><span class="icon solid fa-project-diagram"></span> Migration & Modernization</h4>
-									<ul>
-										<li>AWS MAP 2.0, OLA, TCO modeling</li>
-										<li>VMware / Hyper-V migration patterns</li>
-										<li>MGN + DMS execution planning</li>
-									</ul>
-								</div>
-								<div class="col-4 col-12-medium">
-									<h4><span class="icon solid fa-shield-alt"></span> Security & Governance</h4>
-									<ul>
-										<li>IAM, SCPs, least privilege</li>
-										<li>WAF/Shield, GuardDuty, CloudTrail</li>
-										<li>CIS benchmarks, PCI / ISO readiness</li>
-									</ul>
-								</div>
-							</div>
-
-							<hr />
-
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<h4><span class="icon solid fa-code"></span> DevOps & IaC</h4>
-									<ul>
-										<li>Terraform, CloudFormation</li>
-										<li>GitHub / GitLab CI/CD, CodePipeline</li>
-										<li>Docker, Kubernetes, ECS, EKS</li>
-									</ul>
-								</div>
-								<div class="col-4 col-12-medium">
-									<h4><span class="icon solid fa-chart-line"></span> Monitoring & Operations</h4>
-									<ul>
-										<li>CloudWatch, ELK, Prometheus, Grafana</li>
-										<li>Operational reviews, incident readiness</li>
-										<li>Logging, metrics, alerting practices</li>
-									</ul>
-								</div>
-								<div class="col-4 col-12-medium">
-									<h4><span class="icon solid fa-coins"></span> FinOps</h4>
-									<ul>
-										<li>RI/SP strategy and adoption</li>
-										<li>Rightsizing + storage optimization</li>
-										<li>20–60% cost optimization outcomes</li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<hr />
-
-						<section>
-							<h3>Platforms & Services</h3>
-							<div class="row">
-								<div class="col-6 col-12-medium">
-									<h4>AWS</h4>
-									<ul class="alt">
-										<li>EC2, VPC, ALB/ELB, Auto Scaling</li>
-										<li>S3, CloudFront, Route 53</li>
-										<li>RDS, DynamoDB</li>
-										<li>Lambda, API Gateway</li>
-										<li>ECS, EKS</li>
-										<li>WAF, IAM, CloudTrail, CloudWatch</li>
-										<li>Amazon Bedrock</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-medium">
-									<h4>Azure & OCI</h4>
-									<ul class="alt">
-										<li>Azure: Compute, Networking, IAM</li>
-										<li>OCI: Core services + architecture</li>
-										<li>Hybrid cloud design patterns</li>
-									</ul>
-
-									<h4>Programming</h4>
-									<ul class="alt">
-										<li>Python, Bash, PowerShell</li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<hr />
-
-						<section>
-							<h3>Certifications</h3>
-							<ul>
-								<li>AWS Certified SysOps Administrator – Associate</li>
-								<li>AWS Certified Solutions Architect – Associate</li>
-								<li>Oracle Cloud Infrastructure 2023 Certified Architect Associate</li>
-								<li>Cisco Certified Network Associate (CCNA)</li>
-								<li>AWS Solutions Architect – Professional (In Progress)</li>
-								<li>AZ-104 Microsoft Azure Administrator (Track)</li>
-							</ul>
-
-							<ul class="actions">
-								<li><a href="assets/docs/Naimat-Ullah-Khan-Resume.pdf" class="button primary" target="_blank" rel="noopener">Download CV</a></li>
-								<li><a href="index.html#cta" class="button">Contact</a></li>
-							</ul>
-						</section>
-
-					</div>
-				</section>
-			</article>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/naimatullahkhan/" class="icon brands fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/naimatkhan288" class="icon brands fa-github" target="_blank" rel="noopener"><span class="label">GitHub</span></a></li>
-					<li><a href="https://gitlab.com/Naimat-Khan" class="icon brands fa-gitlab" target="_blank" rel="noopener"><span class="label">GitLab</span></a></li>
-					<li><a href="mailto:naimatkhan288@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Naimat Ullah Khan</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Naimat Ullah Khan</li>
+					<li>Design: HTML5 UP</li>
 				</ul>
 			</footer>
 
